@@ -1,0 +1,33 @@
+{
+  "name": "notedly-desktop",
+  "version": "0.1.0",
+  "description": "An electron client for the Notedly app",
+  "main": "src/index.js",
+  "repository": "https://github.com/LalaIAm/desktop-notedly.git",
+  "author": "Lauren Thorud <lthorud12@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "electron src/index.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -mwl"
+  },
+  "dependencies": {
+    "electron-util": "^0.17.2"
+  },
+  "devDependencies": {
+    "electron": "^15.3.0",
+    "electron-builder": "^22.13.1",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1"
+  },
+  "build": {
+    "appId": "com.webdoodle.notedly",
+    "productName": "Notedly",
+    "directories": {
+      "buildResources": "resources"
+    }
+  }
+}
